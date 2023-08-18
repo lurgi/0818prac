@@ -1,0 +1,92 @@
+* {
+  font-family: "Noto Sans KR", sans-serif;
+}
+.eng_roboto {
+  font-family: "Roboto", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sort_btns {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 70px;
+}
+.sort_btns > button:nth-child(1) {
+  border-radius: 5px 0 0 5px;
+}
+.sort_btns > button:nth-child(2) {
+  border-radius: 0;
+}
+.sort_btns > button:nth-child(3) {
+  border-radius: 0 5px 5px 0;
+}
+.delete_btn {
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  border: 1px solid palevioletred;
+  border-radius: 5px;
+  padding: 3px 7px;
+  background: none;
+  color: palevioletred;
+  transition: all 0.2s;
+}
+.delete_btn:hover {
+  border-color: crimson;
+  color: crimson;
+  background-color: whitesmoke;
+}
+.movie_card {
+  margin-bottom: 20px;
+}
+.movie_info {
+  padding: 20px;
+  display: flex;
+}
+.movie_image {
+  width: 120px;
+  height: 180px;
+  margin-right: 20px;
+  border-radius: 10px;
+  object-fit: contain;
+}
+.center_align {
+  display: flex;
+  align-items: center;
+}
+.movie_btns {
+  display: flex;
+}
+.movie_btns > button {
+  width: 50%;
+  justify-content: center;
+  padding: 10px;
+  border: none;
+  background: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  font-size: large;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+.movie_btns > button:nth-child(1) {
+  color: dodgerblue;
+  border-right: 1px solid rgba(0, 0, 0, 0.125);
+}
+.movie_btns > button:nth-child(2) {
+  color: crimson;
+}
+.movie_btns > button:hover {
+  background-color: whitesmoke;
+}
+.btn_accent {
+  background-color: #0062cc;
+}
+.delete_btn_accent {
+  background-color: rgb(255, 226, 232);
+  color: crimson;
+}
